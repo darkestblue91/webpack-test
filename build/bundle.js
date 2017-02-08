@@ -73,11 +73,14 @@
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 var sum = function sum(a, b) {
   return a + b;
 };
 
-module.exports = sum;
+exports.default = sum;
 
 /***/ }),
 /* 1 */
@@ -86,9 +89,13 @@ module.exports = sum;
 "use strict";
 
 
-var sum = __webpack_require__(0);
+var _math = __webpack_require__(0);
 
-var total = sum(10, 5);
+var _math2 = _interopRequireDefault(_math);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var total = (0, _math2.default)(10, 5);
 console.log(total);
 
 /***/ })
